@@ -56,6 +56,7 @@ const config = {
       },
       fontFamily: {
         sans: [...fontFamily.sans],
+        inter: ['Inter', 'sans-serif'],
       },
     },
   },
