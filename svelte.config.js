@@ -1,5 +1,5 @@
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import adapter from '@sveltejs/adapter-static';
+import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
+import adapter from "@sveltejs/adapter-static";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -14,10 +14,10 @@ const config = {
     adapter: adapter(),
 
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '/personal-site' : '',
+      base: process.env.NODE_ENV === "production" ? "/personal-site" : "",
     },
     alias: {
-      '@/*': './path/to/lib/*',
+      "@/*": "./path/to/lib/*",
     },
   },
 };

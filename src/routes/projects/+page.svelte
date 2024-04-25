@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ProjectCard from '$lib/custom/ProjectCard.svelte';
+  import ProjectCard from "$lib/custom/ProjectCard.svelte";
 </script>
 
 <div class="flex place-content-center">

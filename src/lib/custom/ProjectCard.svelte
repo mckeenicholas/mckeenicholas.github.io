@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { Button } from '$lib/components/ui/button';
-  import * as Card from '$lib/components/ui/card/index';
-  import * as Collapsible from '$lib/components/ui/collapsible/index';
-  import { ChevronDown } from 'lucide-svelte';
+  import { Button } from "$lib/components/ui/button";
+  import * as Card from "$lib/components/ui/card/index";
+  import * as Collapsible from "$lib/components/ui/collapsible/index";
+  import { ChevronDown } from "lucide-svelte";
 
   let open = false;
 
@@ -25,7 +25,7 @@
               <div class="flex">
                 <div class="flex grow">{title}</div>
                 <ChevronDown
-                  class={`h-6 w-6 place-content-end transition-transform duration-200 ${!open && 'rotate-180'}`}
+                  class={`h-6 w-6 place-content-end transition-transform duration-200 ${!open && "rotate-180"}`}
                 />
               </div>
             </Card.Title>
