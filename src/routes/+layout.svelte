@@ -2,8 +2,8 @@
   import "../app.pcss";
   import { ModeWatcher } from "mode-watcher";
   import { onNavigate } from "$app/navigation";
-  import Navigation from "$lib/custom/Navigation.svelte";
-  import Footer from "../lib/custom/Footer.svelte";
+  import Navigation from "$lib/components/custom/Navigation.svelte";
+  import Footer from "$lib/components/custom/Footer.svelte";
 
   onNavigate((navigation) => {
     if (!document.startViewTransition) return;

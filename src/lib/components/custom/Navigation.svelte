@@ -3,15 +3,15 @@
   import { cn } from "$lib/utils.js";
   import NavItem from "./NavItem.svelte";
   import { Facebook, Github, Instagram, Linkedin, Menu } from "lucide-svelte";
-  import MenuButton from "$lib/custom/MenuButton.svelte";
+  import MenuButton from "$lib/components/custom/MenuButton.svelte";
   import * as Collapsible from "$lib/components/ui/collapsible/index";
-  import ModeToggle from "./ModeToggle.svelte"
+  import ModeToggle from "./ModeToggle.svelte";
 
   let className: string | undefined | null = undefined;
   export { className as class };
 
   let innerWidth = 0;
-  $: isSmall = innerWidth < 450;
+  $: isSmall = innerWidth < 600;
 
   let collapsibleOpen = false;
 
@@ -20,9 +20,11 @@
   };
 
   const navItems = [
-    { href: "/", text: "Home" },
+    { href: "/", text: "About" },
     { href: "/projects", text: "Projects" },
-    { href: "/about", text: "About" },
+    { href: "/contact", text: "Contact" },
+    { href: "/resume", text: "Résumé" },
+    { href: "/resume", text: "Photo" },
   ];
 
   const icons = [
@@ -72,16 +74,16 @@
             <Menu class="w-[1.3rem]" />
           </Button>
           <Collapsible.Content>
-              {#each navItems as { href, text }}
-                <NavItem {href} {text} callbackfn={closeDrawer} />
-              {/each}
-            <hr class="mx-1 mb-2 mt-1.5">
-            <div class="flex grow justify-between items-center  ">
+            {#each navItems as { href, text }}
+              <NavItem {href} {text} callbackfn={closeDrawer} />
+            {/each}
+            <hr class="mx-1 mb-2 mt-1.5" />
+            <div class="flex grow items-center justify-between">
               <div>
-              {#each icons as { href, icon }}
+                {#each icons as { href, icon }}
                   <MenuButton {href} {icon} />
-              {/each}
-            </div>
+                {/each}
+              </div>
               <ModeToggle />
             </div>
           </Collapsible.Content>

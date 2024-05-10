@@ -6,7 +6,7 @@
   export let callbackfn: () => void | null = () => null;
 
   $: selected = $page.url.pathname === href;
-</script> 
+</script>
 
 <a {href} on:click={callbackfn}>
   <div
