@@ -1,6 +1,7 @@
 <script lang="ts">
   import ProjectCard from "$lib/components/custom/ProjectCard.svelte";
   import LinkText from "$lib/components/custom/LinkText.svelte";
+  import Badge from "$lib/components/custom/Badge.svelte";
 </script>
 
 <div class="flex place-content-center">
@@ -11,34 +12,17 @@
       My Projects:
     </h1>
 
-    <ProjectCard title="Automated Scorecard OCR">
+    <ProjectCard
+      title="Automated Scorecard OCR"
+      sourceLink="https://github.com/mckeenicholas/scorecard-reader"
+    >
       <div slot="desc">
         <div class="flex space-x-2">
-          <img
-            src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"
-            class="rounded-md"
-            alt="python"
-          />
-          <img
-            src="https://img.shields.io/badge/OpenCV-FFFFFF?style=for-the-badge&logo=opencv&logoColor=black"
-            class="rounded-md border border-black"
-            alt="opencv"
-          />
-          <img
-            src="https://img.shields.io/badge/Numpy-4d77cf?style=for-the-badge&logo=numpy&logoColor=white"
-            class="rounded-md"
-            alt="numpy"
-          />
-          <img
-            src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"
-            class="rounded-md"
-            alt="pytorch"
-          />
-          <img
-            src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white"
-            class="rounded-md"
-            alt="graphql"
-          />
+          <Badge logo="python" label="Python" color="white" fill="3776AB" />
+          <Badge logo="opencv" label="OpenCV" color="black" fill="FFFFFF" />
+          <Badge logo="numpy" label="Numpy" color="white" fill="4D77Cf" />
+          <Badge logo="pytorch" label="PyTorch" color="white" fill="EE4C2C" />
+          <Badge logo="graphql" label="GraphQL" color="white" fill="E10098" />
         </div>
       </div>
       <div slot="content" class="space-y-2">
@@ -65,30 +49,20 @@
     >
       <div slot="desc">
         <div class="flex space-x-2">
-          <img
-            src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"
-            class="rounded-md"
-            alt="python"
+          <Badge logo="python" label="Python" color="white" fill="3776AB" />
+          <Badge
+            logo="typescript"
+            label="TypeScript"
+            color="white"
+            fill="007ACC"
           />
-          <img
-            src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-            class="rounded-md"
-            alt="typescript"
-          />
-          <img
-            src="https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black"
-            class="rounded-md"
-            alt="react"
-          />
-          <img
-            src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white"
-            class="rounded-md"
-            alt="django"
-          />
-          <img
-            src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
-            class="rounded-md"
-            alt="bootstrap"
+          <Badge logo="react" label="React" color="black" fill="61DAFB" />
+          <Badge logo="django" label="Django" color="white" fill="092E20" />
+          <Badge
+            logo="bootstrap"
+            label="Bootstrap"
+            color="white"
+            fill="563D7C"
           />
         </div>
       </div>
@@ -114,15 +88,12 @@
     >
       <div slot="desc">
         <div class="flex space-x-2">
-          <img
-            src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"
-            class="rounded-md"
-            alt="java"
-          />
-          <img
-            src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
-            class="rounded-md"
-            alt="postgresql"
+          <Badge logo="openjdk" label="Java" color="white" fill="ED8B00" />
+          <Badge
+            logo="postgresql"
+            label="PostgreSQL"
+            color="white"
+            fill="316192"
           />
         </div>
       </div>
@@ -148,25 +119,14 @@
     >
       <div slot="desc">
         <div class="flex space-x-2">
-          <img
-            src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"
-            class="rounded-md"
-            alt="python"
-          />
-          <img
-            src="https://img.shields.io/badge/Numpy-4d77cf?style=for-the-badge&logo=numpy&logoColor=white"
-            class="rounded-md"
-            alt="numpy"
-          />
-          <img
-            src="https://img.shields.io/badge/Pandas-1a0f59?style=for-the-badge&logo=pandas&logoColor=white"
-            class="rounded-md"
-            alt="pandas"
-          />
-          <img
-            src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
-            class="rounded-md"
-            alt="postgresql"
+          <Badge logo="python" label="Python" color="white" fill="3776AB" />
+          <Badge logo="numpy" label="Numpy" color="white" fill="4D77Cf" />
+          <Badge logo="pandas" label="Pandas" color="white" fill="1A0F59" />
+          <Badge
+            logo="postgresql"
+            label="PostgreSQL"
+            color="white"
+            fill="316192"
           />
         </div>
       </div>
@@ -196,15 +156,12 @@
     >
       <div slot="desc">
         <div class="flex space-x-2">
-          <img
-            src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white"
-            class="rounded-md"
-            alt="vue"
-          />
-          <img
-            src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-            class="rounded-md"
-            alt="typescript"
+          <Badge logo="vue.js" label="Vue.js" color="white" fill="4FC08D" />
+          <Badge
+            logo="typescript"
+            label="TypeScript"
+            color="white"
+            fill="007ACC"
           />
         </div>
       </div>
@@ -236,15 +193,12 @@
     >
       <div slot="desc">
         <div class="flex space-x-2">
-          <img
-            src="https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black"
-            class="rounded-md"
-            alt="react"
-          />
-          <img
-            src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-            class="rounded-md"
-            alt="typescript"
+          <Badge logo="react" label="React" color="black" fill="61DAFB" />
+          <Badge
+            logo="typescript"
+            label="TypeScript"
+            color="white"
+            fill="007ACC"
           />
         </div>
       </div>
@@ -266,15 +220,12 @@
     >
       <div slot="desc">
         <div class="flex space-x-2">
-          <img
-            src="https://img.shields.io/badge/Svelte-ff4408?style=for-the-badge&logo=svelte&logoColor=white"
-            class="rounded-md"
-            alt="svelte"
-          />
-          <img
-            src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-            class="rounded-md"
-            alt="typescript"
+          <Badge logo="svelte" label="Svelte" color="white" fill="FF4408" />
+          <Badge
+            logo="typescript"
+            label="TypeScript"
+            color="white"
+            fill="007ACC"
           />
         </div>
       </div>
@@ -293,16 +244,8 @@
     >
       <div slot="desc">
         <div class="flex space-x-2">
-          <img
-            src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
-            class="rounded-md"
-            alt="c++"
-          />
-          <img
-            src="https://img.shields.io/badge/CMake-083d69?style=for-the-badge&logo=cmake&logoColor=white"
-            class="rounded-md"
-            alt="cmake"
-          />
+          <Badge logo="c++" label="C++" color="white" fill="00599C" />
+          <Badge logo="cmake" label="CMake" color="white" fill="083D69" />
         </div>
       </div>
       <div slot="content" class="space-y-2">

@@ -24,14 +24,17 @@
     { href: "/projects", text: "Projects" },
     { href: "/contact", text: "Contact" },
     { href: "/resume", text: "Résumé" },
-    { href: "/resume", text: "Photo" },
+    { href: "/photos", text: "Photos" },
   ];
 
   const icons = [
-    { href: "https://github.com/mckeenicholas", icon: Github },
-    { href: "https://github.com/mckeenicholas", icon: Linkedin },
-    { href: "https://github.com/mckeenicholas", icon: Instagram },
-    { href: "https://github.com/mckeenicholas", icon: Facebook },
+    { href: "https://github.com/mckeenicholas/", icon: Github },
+    {
+      href: "https://www.linkedin.com/in/nicholas-mckee-404506252/",
+      icon: Linkedin,
+    },
+    { href: "https://www.instagram.com/nicholasmmckee/", icon: Instagram },
+    { href: "https://www.facebook.com/mckeenic/", icon: Facebook },
   ];
 </script>
 
