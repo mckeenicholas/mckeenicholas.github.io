@@ -22,7 +22,7 @@
             systems.
           </p>
           <p>
-            I grew up in the Greater Boston area, and briefly lived in Ireland
+            I grew up in the Greater Boston area, (but briefly lived in Ireland)
             before moving to Canada for University in 2021.
           </p>
           <p>

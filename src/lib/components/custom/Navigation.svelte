@@ -19,6 +19,7 @@
     collapsibleOpen = false;
   };
 
+  // Each page in the navigation bar, without base url added
   const navItems = [
     { href: "/", text: "About" },
     { href: "/projects", text: "Projects" },

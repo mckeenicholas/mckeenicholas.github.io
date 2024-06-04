@@ -4,7 +4,6 @@
   import * as Collapsible from "$lib/components/ui/collapsible/index";
   import * as Tooltip from "$lib/components/ui/tooltip/index";
   import { ChevronDown, SquareArrowOutUpRight, Code } from "lucide-svelte";
-  import { TooltipTrigger } from "../ui/tooltip";
 
   let open = false;
 
@@ -36,7 +35,7 @@
             <div class="flex grow">
               <slot name="desc" />
             </div>
-            <div class="place-content-end">
+            <div class="-me-1.5 place-content-end">
               {#if sourceLink}
                 <Tooltip.Root openDelay={0}>
                   <Tooltip.Trigger>
