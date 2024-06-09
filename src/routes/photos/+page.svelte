@@ -18,60 +18,58 @@
   let innerWidth = 0;
   $: isSmall = innerWidth < 770;
 
-  const photos_dir = "src/assets/static/photos/";
-
   const images = [
     {
-      src: "DSC00429.JPG",
+      src: "/DSC00429.JPG",
       alt: "Sunset over Vernazza",
       location: "Cinque Terre, Italy",
     },
     {
-      src: "DSC00625.JPG",
+      src: "/DSC00625.JPG",
       alt: "Waves on the coastline",
       location: "Cinque Terre, Italy",
     },
     {
-      src: "DSC01253.JPG",
+      src: "/DSC01253.JPG",
       alt: "View over a canal",
       location: "Venice, Italy",
     },
     {
-      src: "DSC01477.JPG",
+      src: "/DSC01477.JPG",
       alt: "Cat on a porch",
       location: "Moulay Idriss Zerhoun, Morocco",
     },
-    { src: "DSC02689.JPG", alt: "Desert camp", location: "" },
-    { src: "DSC02692.JPG", alt: "Camel", location: "" },
+    { src: "/DSC02689.JPG", alt: "Desert camp", location: "" },
+    { src: "/DSC02692.JPG", alt: "Camel", location: "" },
     {
-      src: "DSC03849.jpg",
+      src: "/DSC03849.jpg",
       alt: "Mallard",
       location: "San Juan Capistrano, California",
     },
     {
-      src: "DSC04048.JPG",
+      src: "/DSC04048.JPG",
       alt: "End of Route 66",
       location: "Santa Monica, California",
     },
     {
-      src: "DSC04094.JPG",
+      src: "/DSC04094.JPG",
       alt: "Santa Monica Pier",
       location: "Santa Monica, California",
     },
     {
-      src: "DSC04434.jpg",
+      src: "/DSC04434.jpg",
       alt: "The Getty",
       location: "Los Angeles, California",
     },
-    { src: "DSC05609.JPG", alt: "Cardinal" },
-    { src: "DSC07085.JPG", alt: "Bracken the dog", location: "" },
+    { src: "/DSC05609.JPG", alt: "Cardinal" },
+    { src: "/DSC07085.JPG", alt: "Bracken the dog", location: "" },
     {
-      src: "DSC08435.JPG",
+      src: "/DSC08435.JPG",
       alt: "Night under the stars",
       location: "Cimarron, New Mexico",
     },
     {
-      src: "DSC09821.JPG",
+      src: "/DSC09821.JPG",
       alt: "Horseshoe Bend",
       location: "Grand Canyon, Arizona",
     },
@@ -93,7 +91,7 @@
             <div class="flex h-full items-center justify-center">
               <div class="flex flex-col items-center justify-center">
                 <img
-                  src={`${photos_dir}${src}`}
+                  {src}
                   {alt}
                   class="mb-2 rounded-lg border border-secondary"
                 />
