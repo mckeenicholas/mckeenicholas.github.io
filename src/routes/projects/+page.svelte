@@ -17,7 +17,7 @@
       sourceLink="https://github.com/mckeenicholas/scorecard-reader"
     >
       <div slot="desc">
-        <div class="flex space-x-2">
+        <div class="flex flex-wrap gap-x-2">
           <Badge logo="python" label="Python" color="white" fill="3776AB" />
           <Badge logo="opencv" label="OpenCV" color="black" fill="FFFFFF" />
           <Badge logo="numpy" label="Numpy" color="white" fill="4D77Cf" />
@@ -48,7 +48,7 @@
       sourceLink="https://github.com/mckeenicholas/309-P3"
     >
       <div slot="desc">
-        <div class="flex space-x-2">
+        <div class="flex flex-wrap gap-x-2">
           <Badge logo="python" label="Python" color="white" fill="3776AB" />
           <Badge
             logo="typescript"
@@ -87,7 +87,7 @@
       sourceLink="https://github.com/mckeenicholas/course-project-exam-centre"
     >
       <div slot="desc">
-        <div class="flex space-x-2">
+        <div class="flex flex-wrap gap-x-2">
           <Badge logo="openjdk" label="Java" color="white" fill="ED8B00" />
           <Badge
             logo="postgresql"
@@ -118,7 +118,7 @@
       sourceLink="https://github.com/mckeenicholas/wca-odds-v2"
     >
       <div slot="desc">
-        <div class="flex space-x-2">
+        <div class="flex flex-wrap gap-x-2">
           <Badge logo="python" label="Python" color="white" fill="3776AB" />
           <Badge logo="numpy" label="Numpy" color="white" fill="4D77Cf" />
           <Badge logo="pandas" label="Pandas" color="white" fill="1A0F59" />
@@ -128,6 +128,7 @@
             color="white"
             fill="316192"
           />
+          <Badge logo="flask" label="Flask" color="black" fill="FFFFFF" />
         </div>
       </div>
       <div slot="content" class="space-y-2">
@@ -147,6 +148,71 @@
           Correctly predicts the winner over 75% of the time, with a top-3 error
           rate under 5%.
         </p>
+        <p>
+          Created a public facing RESTful API using Flask allowing program to be
+          run as a backend service.
+        </p>
+      </div>
+    </ProjectCard>
+
+    <ProjectCard
+      title="Cubing Betting Odds Web"
+      sourceLink="https://github.com/mckeenicholas/wca-odds-web"
+    >
+      <div slot="desc">
+        <div class="flex flex-wrap gap-x-2">
+          <Badge logo="Rust" label="Rust" color="white" fill="CE412B" />
+          <Badge
+            logo="WebAssembly"
+            label="WebAssembly"
+            color="white"
+            fill="6A55F0"
+          />
+          <Badge logo="vue.js" label="Vue.js" color="white" fill="4FC08D" />
+          <Badge
+            logo="typescript"
+            label="TypeScript"
+            color="white"
+            fill="007ACC"
+          />
+        </div>
+      </div>
+      <div slot="content" class="space-y-2">
+        <p>A web port of the Cubing Betting odds calculator.</p>
+        <p>
+          Created a custom result prediction model in Rust compiled to
+          WebAssembly to efficiently run client-side in the browser acheving 5x
+          performance boost over native JavaScript.
+        </p>
+        <p>
+          Created a responsilve UI with Custom data visualizations for results
+          using Vue.js.
+        </p>
+      </div>
+    </ProjectCard>
+
+    <ProjectCard
+      title="Sudoku Solver"
+      sourceLink="https://github.com/mckeenicholas/sudoku-wasm"
+    >
+      <div slot="desc">
+        <div class="flex flex-wrap gap-x-2">
+          <Badge logo="Rust" label="Rust" color="white" fill="CE412B" />
+          <Badge
+            logo="WebAssembly"
+            label="WebAssembly"
+            color="white"
+            fill="6A55F0"
+          />
+          <Badge logo="svelte" label="Svelte" color="white" fill="FF4408" />
+        </div>
+      </div>
+      <div slot="content" class="space-y-2">
+        <p>A simple web-based 9x9 Sudoku solver using backtracking search.</p>
+        <p>
+          Implemented in Rust and compiled to WebAssembly to run for ultra-fast
+          performance client-side.
+        </p>
       </div>
     </ProjectCard>
 
@@ -155,7 +221,7 @@
       sourceLink="https://github.com/mckeenicholas/group-renamer"
     >
       <div slot="desc">
-        <div class="flex space-x-2">
+        <div class="flex flex-wrap gap-x-2">
           <Badge logo="vue.js" label="Vue.js" color="white" fill="4FC08D" />
           <Badge
             logo="typescript"
@@ -192,7 +258,7 @@
       demoLink="https://mckeenicholas.github.io/competition-finder/"
     >
       <div slot="desc">
-        <div class="flex space-x-2">
+        <div class="flex flex-wrap gap-x-2">
           <Badge logo="react" label="React" color="black" fill="61DAFB" />
           <Badge
             logo="typescript"
@@ -219,7 +285,7 @@
       sourceLink="https://github.com/mckeenicholas/personal-site"
     >
       <div slot="desc">
-        <div class="flex space-x-2">
+        <div class="flex flex-wrap gap-x-2">
           <Badge logo="svelte" label="Svelte" color="white" fill="FF4408" />
           <Badge
             logo="typescript"
@@ -243,7 +309,7 @@
       sourceLink="https://github.com/mckeenicholas/huffman-encoder"
     >
       <div slot="desc">
-        <div class="flex space-x-2">
+        <div class="flex flex-wrap gap-x-2">
           <Badge logo="c++" label="C++" color="white" fill="00599C" />
           <Badge logo="cmake" label="CMake" color="white" fill="083D69" />
         </div>

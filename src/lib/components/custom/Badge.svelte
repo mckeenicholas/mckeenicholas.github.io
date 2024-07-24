@@ -7,6 +7,6 @@
 
 <img
   src={`https://img.shields.io/badge/${label}-${fill}?style=for-the-badge&logo=${logo}&logoColor=${color}`}
-  class="rounded-md"
+  class="my-1 rounded-md"
   alt={label}
 />

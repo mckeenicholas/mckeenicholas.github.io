@@ -1,4 +1,6 @@
 <script lang="ts">
+  let src =
+    "https://drive.google.com/file/d/15zS0W8a8A3UDbwj6AR3nxz9TtGZR5A-m/preview";
   let innerWidth = 0;
   $: height = Math.min(1030, (innerWidth - 20) * (11 / 8.5));
 </script>
@@ -7,7 +9,7 @@
 <div class="my-4 flex place-content-center">
   <iframe
     title="resume"
-    src="https://drive.google.com/file/d/1r2ubnUCGyLOX7mrMN0tSzlkWHU0o7bbt/preview"
+    {src}
     allow="autoplay"
     width="800"
     {height}
