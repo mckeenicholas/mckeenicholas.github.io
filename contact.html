@@ -13,28 +13,61 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-		<link rel="modulepreload" href="./_app/immutable/entry/start.COsW0aGt.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/entry.CCq3DzHV.js">
+		<link href="./_app/immutable/assets/0.CbaNYG16.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.B9mIuSkU.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.DaSZwF5O.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.C41YQ-iD.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index._V2TdX_x.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.2u_-lfRT.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.CVmWQRbE.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.3m8dJJwv.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.BfGJeEMV.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Icon.CdgCsRL7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/spread.CgU5AtxT.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.BzUWPZ84.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/utils.DDrGTxrE.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.Bv1ruqsV.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.BCfYqFqh.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/updater.DAHtJNeO.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/3.DClc-rSI.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/LinkText.BScGV1FB.js"><!-- HEAD_svelte-cpyj77_START --><!-- HTML_TAG_START --><script nonce="%sveltekit.nonce%">(function setInitialMode(defaultMode, themeColors2) {
+  const rootEl = document.documentElement;
+  const mode = localStorage.getItem("mode-watcher-mode") || defaultMode;
+  const light = mode === "light" || mode === "system" && window.matchMedia("(prefers-color-scheme: light)").matches;
+  rootEl.classList[light ? "remove" : "add"]("dark");
+  rootEl.style.colorScheme = light ? "light" : "dark";
+  if (themeColors2) {
+    const themeMetaEl = document.querySelector('meta[name="theme-color"]');
+    if (themeMetaEl) {
+      themeMetaEl.setAttribute("content", mode === "light" ? themeColors2.light : themeColors2.dark);
+    }
+  }
+  localStorage.setItem("mode-watcher-mode", mode);
+})("dark");</script><!-- HTML_TAG_END --><!-- HEAD_svelte-cpyj77_END -->
   </head>
   <body data-sveltekit-preload-data="hover">
-    <div style="display: contents font-inter">
+    <div style="display: contents font-inter">   <div class="flex h-screen flex-col justify-between"> <div class="flex"><div class="m-2 grow"><div data-state="closed" data-melt-collapsible="" data-collapsible-root=""><div class="min-h-10 rounded-lg border border-secondary p-1"> <button type="button" tabindex="0" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 background hover:bg-secondary ms-0 h-[1.9rem] px-2 py-1 text-muted-foreground transition-all hover:text-primary" data-button-root=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-menu w-[1.3rem]"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button> </div></div></div></div> <div class="m-2 mb-auto"><div class="flex place-content-center"><div class="text-center"><h1 class="my-4 scroll-m-20 text-2xl font-bold tracking-tight" data-svelte-h="svelte-bmupem">You can reach me at:</h1> <div><a href="mailto:nicholas.mckee@mail.utoronto.ca" class="underline hover:text-muted-foreground inline-flex items-center text-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-mail me-2 w-[1.3rem]"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+        nicholas.mckee@mail.utoronto.ca</a></div></div></div></div> <footer class="bottom-auto grid h-10" data-svelte-h="svelte-1xalw7w"><hr> <div class="text-center text-muted-foreground">© 2024 Nicholas McKee</div></footer></div> 
+			
 			<script>
 				{
-					__sveltekit_1ok8ln9 = {
+					__sveltekit_s8f17g = {
 						base: new URL(".", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
+					const data = [null,null];
+
 					Promise.all([
-						import("./_app/immutable/entry/start.COsW0aGt.js"),
-						import("./_app/immutable/entry/app.2u_-lfRT.js")
+						import("./_app/immutable/entry/start.B9mIuSkU.js"),
+						import("./_app/immutable/entry/app.CVmWQRbE.js")
 					]).then(([kit, app]) => {
-						kit.start(app, element);
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data,
+							form: null,
+							error: null
+						});
 					});
 				}
 			</script>
