@@ -2,7 +2,7 @@
   import { Button } from "$lib/components/ui/button";
 
   export let href: string;
-  export let icon: ConstructorOfATypedSvelteComponent;
+  export let icon: any;
 </script>
 
 <Button
