@@ -50,7 +50,8 @@
             </p>
             <p>
               My programming languages of choice are Python and TypeScript, but
-              I am familiar with <LinkText href="/resume"
+              I am familiar with <LinkText
+                href="https://teach.cs.utoronto.ca/~mckeenic/resume.pdf"
                 >several others</LinkText
               >.
             </p>

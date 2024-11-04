@@ -24,7 +24,10 @@
     { href: "/", text: "About" },
     { href: "/projects", text: "Projects" },
     { href: "/contact", text: "Contact" },
-    { href: "/resume", text: "Résumé" },
+    {
+      href: "https://teach.cs.utoronto.ca/~mckeenic/resume.pdf",
+      text: "Résumé",
+    },
     { href: "/photos", text: "Photos" },
   ];
 
