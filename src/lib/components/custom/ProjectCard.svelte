@@ -5,11 +5,23 @@
   import * as Tooltip from "$lib/components/ui/tooltip/index";
   import { ChevronDown, SquareArrowOutUpRight, Code } from "lucide-svelte";
 
-  let open = false;
+  let open = $state(false);
 
-  export let title: string;
-  export let sourceLink: string | null = null;
-  export let demoLink: string | null = null;
+  interface Props {
+    title: string;
+    sourceLink?: string | null;
+    demoLink?: string | null;
+    desc?: import("svelte").Snippet;
+    content?: import("svelte").Snippet;
+  }
+
+  let {
+    title,
+    sourceLink = null,
+    demoLink = null,
+    desc,
+    content,
+  }: Props = $props();
 </script>
 
 <div class="my-4">
@@ -33,7 +45,7 @@
         <Card.Description>
           <div class="flex">
             <div class="flex grow">
-              <slot name="desc" />
+              {@render desc?.()}
             </div>
             <div class="-me-1.5 place-content-end">
               {#if sourceLink}
@@ -68,7 +80,7 @@
       </Card.Header>
       <Collapsible.Content>
         <Card.Content>
-          <slot name="content" />
+          {@render content?.()}
         </Card.Content>
       </Collapsible.Content>
     </Card.Root>

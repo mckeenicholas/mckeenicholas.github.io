@@ -1,8 +1,12 @@
 <script lang="ts">
-  export let logo: string;
-  export let label: string;
-  export let fill: string;
-  export let color: "white" | "black";
+  interface Props {
+    logo: string;
+    label: string;
+    fill: string;
+    color: "white" | "black";
+  }
+
+  let { logo, label, fill, color }: Props = $props();
 </script>
 
 <img

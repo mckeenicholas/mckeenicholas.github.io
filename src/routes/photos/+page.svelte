@@ -1,22 +1,26 @@
 <script lang="ts">
+  import { run } from "svelte/legacy";
+
   import { type CarouselAPI } from "$lib/components/ui/carousel/context.js";
   import * as Carousel from "$lib/components/ui/carousel/index.js";
   import { MapPin } from "lucide-svelte";
 
-  let api: CarouselAPI;
-  let count = 0;
-  let current = 0;
+  let api: CarouselAPI = $state();
+  let count = $state(0);
+  let current = $state(0);
 
-  $: if (api) {
-    count = api.scrollSnapList().length;
-    current = api.selectedScrollSnap() + 1;
-    api.on("select", () => {
+  run(() => {
+    if (api) {
+      count = api.scrollSnapList().length;
       current = api.selectedScrollSnap() + 1;
-    });
-  }
+      api.on("select", () => {
+        current = api.selectedScrollSnap() + 1;
+      });
+    }
+  });
 
-  let innerWidth = 0;
-  $: isSmall = innerWidth < 770;
+  let innerWidth = $state(0);
+  let isSmall = $derived(innerWidth < 770);
 
   const images = [
     {
@@ -86,7 +90,7 @@
   <div>
     <Carousel.Root class="max-w-2xl" bind:api>
       <Carousel.Content>
-        {#each images as { src, alt, location }}
+        {#each images as { src, alt, location }, idx (idx)}
           <Carousel.Item>
             <div class="flex h-full items-center justify-center">
               <div class="flex flex-col items-center justify-center">

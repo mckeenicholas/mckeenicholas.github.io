@@ -7,13 +7,16 @@
   import * as Collapsible from "$lib/components/ui/collapsible/index";
   import ModeToggle from "./ModeToggle.svelte";
 
-  let className: string | undefined | null = undefined;
-  export { className as class };
+  interface Props {
+    class?: string | undefined | null;
+  }
 
-  let innerWidth = 0;
-  $: isSmall = innerWidth < 600;
+  let { class: className = undefined }: Props = $props();
 
-  let collapsibleOpen = false;
+  let innerWidth = $state(600);
+  let isSmall = $derived(innerWidth < 600);
+
+  let collapsibleOpen = $state(false);
 
   const closeDrawer = () => {
     collapsibleOpen = false;
@@ -49,7 +52,7 @@
       class="m-2 flex h-10 grow items-center rounded-lg border border-secondary px-1"
     >
       <nav class={cn("flex items-center space-x-0", className)}>
-        {#each navItems as { href, text }}
+        {#each navItems as { href, text }, idx (idx)}
           <NavItem {href} {text} />
         {/each}
       </nav>
@@ -57,7 +60,7 @@
 
     <div class="m-2 ml-0 place-content-end">
       <div class="h-10 rounded-lg border border-secondary p-1">
-        {#each icons as { href, icon }}
+        {#each icons as { href, icon }, idx (idx)}
           <MenuButton {href} {icon} />
         {/each}
       </div>
@@ -81,13 +84,13 @@
             <Menu class="w-[1.3rem]" />
           </Button>
           <Collapsible.Content>
-            {#each navItems as { href, text }}
+            {#each navItems as { href, text }, idx (idx)}
               <NavItem {href} {text} callbackfn={closeDrawer} />
             {/each}
             <hr class="mx-1 mb-2 mt-1.5" />
             <div class="flex grow items-center justify-between">
               <div>
-                {#each icons as { href, icon }}
+                {#each icons as { href, icon }, idx (idx)}
                   <MenuButton {href} {icon} />
                 {/each}
               </div>

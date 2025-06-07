@@ -1,16 +1,22 @@
 <script lang="ts">
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
 
-  export let href: string;
-  export let text: string;
-  export let callbackfn: () => void | null = () => null;
+  interface Props {
+    href: string;
+    text: string;
+    callbackfn?: () => void | null;
+  }
 
-  $: selected = $page.url.pathname === href;
+  let { href, text, callbackfn = () => null }: Props = $props();
+
+  let selected = $derived(page.url.pathname === href);
 </script>
 
-<a {href} on:click={callbackfn}>
+<a {href} onclick={callbackfn}>
   <div
-    class={`text-md rounded-md px-2 py-1 font-medium transition-colors hover:bg-secondary hover:text-primary ${selected ? "text-primary" : "text-muted-foreground"}`}
+    class="text-md rounded-md px-2 py-1 font-medium transition-colors hover:bg-secondary hover:text-primary"
+    class:text-primary={selected}
+    class:text-muted-foreground={!selected}
   >
     {text}
   </div>
