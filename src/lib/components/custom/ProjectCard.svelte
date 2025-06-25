@@ -27,13 +27,13 @@
 <div class="my-4">
   <Collapsible.Root bind:open class="grow">
     <Card.Root class="grow pb-1">
-      <Card.Header class="-mb-2">
+      <Card.Header class="-mb-4">
         <Button
           on:click={() => (open = !open)}
           variant="ghost"
           class="-m-4 mb-0 flex justify-normal p-0"
         >
-          <Card.Title class="m-4 grow">
+          <Card.Title class="m-2 grow">
             <div class="flex">
               <div class="flex grow pt-0.5 align-middle">{title}</div>
               <ChevronDown
@@ -44,7 +44,7 @@
         </Button>
         <Card.Description>
           <div class="flex">
-            <div class="flex grow">
+            <div class="-ms-3 -mt-1 flex grow">
               {@render desc?.()}
             </div>
             <div class="-me-1.5 place-content-end">
@@ -79,7 +79,7 @@
         </Card.Description>
       </Card.Header>
       <Collapsible.Content>
-        <Card.Content>
+        <Card.Content class="pb-2">
           {@render content?.()}
         </Card.Content>
       </Collapsible.Content>

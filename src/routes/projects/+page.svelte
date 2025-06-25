@@ -13,6 +13,59 @@
     </h1>
 
     <ProjectCard
+      title="Cubing Odds Calculator"
+      sourceLink="https://github.com/mckeenicholas/wca-odds-web"
+      demoLink="https://odds.nmckee.org/"
+    >
+      {#snippet desc()}
+        <div>
+          <div class="flex flex-wrap gap-x-2">
+            <Badge logo="Rust" label="Rust" color="white" fill="CE412B" />
+            <Badge
+              logo="WebAssembly"
+              label="WebAssembly"
+              color="white"
+              fill="6A55F0"
+            />
+            <Badge logo="vue.js" label="Vue.js" color="white" fill="4FC08D" />
+            <Badge
+              logo="typescript"
+              label="TypeScript"
+              color="white"
+              fill="007ACC"
+            />
+          </div>
+        </div>
+      {/snippet}
+      {#snippet content()}
+        <div class="space-y-2">
+          <p>
+            A web-based application to calcualte a competitor's odds of winning
+            a cubing competition.
+          </p>
+          <p>
+            Designed custom prediction model written in Rust with SIMD
+            acceleration to efficiently run over 100,000 simulations per second
+            in the browser
+          </p>
+          <p>
+            Correctly predicts the winner over 75% of the time, with a top-3
+            error rate under 5%.
+          </p>
+          <p>
+            Created a responsive frontend UI with custom data visualizations to
+            display simulation results and statistics, using Vue.js
+          </p>
+          <p>
+            Attracted high user engagement within the Speedcubing community,
+            averaging over 15,000 monthly page views, and over 1,200 monthly
+            unique visitors
+          </p>
+        </div>
+      {/snippet}
+    </ProjectCard>
+
+    <ProjectCard
       title="Automated Scorecard OCR"
       sourceLink="https://github.com/mckeenicholas/scorecard-reader"
     >
@@ -126,121 +179,6 @@
     </ProjectCard>
 
     <ProjectCard
-      title="Cubing Betting Odds Calculator"
-      sourceLink="https://github.com/mckeenicholas/wca-odds-v2"
-    >
-      {#snippet desc()}
-        <div>
-          <div class="flex flex-wrap gap-x-2">
-            <Badge logo="python" label="Python" color="white" fill="3776AB" />
-            <Badge logo="numpy" label="Numpy" color="white" fill="4D77Cf" />
-            <Badge logo="pandas" label="Pandas" color="white" fill="1A0F59" />
-            <Badge
-              logo="postgresql"
-              label="PostgreSQL"
-              color="white"
-              fill="316192"
-            />
-            <Badge logo="flask" label="Flask" color="black" fill="FFFFFF" />
-          </div>
-        </div>
-      {/snippet}
-      {#snippet content()}
-        <div class="space-y-2">
-          <p>
-            An application that quickly calculates a competitor's chances of
-            winning official WCA cubing competitions.
-          </p>
-          <p>
-            Analyzes a competitor's past results and uses a model to simulate
-            results of future competitions.
-          </p>
-          <p>
-            Utilizes highly parallellized and vectorized NumPy code to run over
-            10 million simulations in under 30 seconds.
-          </p>
-          <p>
-            Correctly predicts the winner over 75% of the time, with a top-3
-            error rate under 5%.
-          </p>
-          <p>
-            Created a public facing RESTful API using Flask allowing program to
-            be run as a backend service.
-          </p>
-        </div>
-      {/snippet}
-    </ProjectCard>
-
-    <ProjectCard
-      title="Cubing Betting Odds Web"
-      sourceLink="https://github.com/mckeenicholas/wca-odds-web"
-    >
-      {#snippet desc()}
-        <div>
-          <div class="flex flex-wrap gap-x-2">
-            <Badge logo="Rust" label="Rust" color="white" fill="CE412B" />
-            <Badge
-              logo="WebAssembly"
-              label="WebAssembly"
-              color="white"
-              fill="6A55F0"
-            />
-            <Badge logo="vue.js" label="Vue.js" color="white" fill="4FC08D" />
-            <Badge
-              logo="typescript"
-              label="TypeScript"
-              color="white"
-              fill="007ACC"
-            />
-          </div>
-        </div>
-      {/snippet}
-      {#snippet content()}
-        <div class="space-y-2">
-          <p>A web port of the Cubing Betting odds calculator.</p>
-          <p>
-            Created a custom result prediction model in Rust compiled to
-            WebAssembly to efficiently run client-side in the browser acheving
-            5x performance boost over native JavaScript.
-          </p>
-          <p>
-            Created a responsilve UI with Custom data visualizations for results
-            using Vue.js.
-          </p>
-        </div>
-      {/snippet}
-    </ProjectCard>
-
-    <ProjectCard
-      title="Sudoku Solver"
-      sourceLink="https://github.com/mckeenicholas/sudoku-wasm"
-    >
-      {#snippet desc()}
-        <div>
-          <div class="flex flex-wrap gap-x-2">
-            <Badge logo="Rust" label="Rust" color="white" fill="CE412B" />
-            <Badge
-              logo="WebAssembly"
-              label="WebAssembly"
-              color="white"
-              fill="6A55F0"
-            />
-            <Badge logo="svelte" label="Svelte" color="white" fill="FF4408" />
-          </div>
-        </div>
-      {/snippet}
-      {#snippet content()}
-        <div class="space-y-2">
-          <p>A simple web-based 9x9 Sudoku solver using backtracking search.</p>
-          <p>
-            Implemented in Rust and compiled to WebAssembly to run for
-            ultra-fast performance client-side.
-          </p>
-        </div>
-      {/snippet}
-    </ProjectCard>
-
-    <ProjectCard
       title="WCA Advanced Group Editor"
       sourceLink="https://github.com/mckeenicholas/group-renamer"
     >
@@ -281,38 +219,6 @@
     </ProjectCard>
 
     <ProjectCard
-      title="WCA Competition Finder"
-      sourceLink="https://github.com/mckeenicholas/competition-finder"
-      demoLink="https://mckeenicholas.github.io/competition-finder/"
-    >
-      {#snippet desc()}
-        <div>
-          <div class="flex flex-wrap gap-x-2">
-            <Badge logo="react" label="React" color="black" fill="61DAFB" />
-            <Badge
-              logo="typescript"
-              label="TypeScript"
-              color="white"
-              fill="007ACC"
-            />
-          </div>
-        </div>
-      {/snippet}
-      {#snippet content()}
-        <div class="space-y-2">
-          <p>
-            A frontend web application allowing users to search and filter for
-            cubing competitions near them.
-          </p>
-          <p>
-            Allows competitors to search for competitions by means not available
-            on the offical WCA site, such as by distance to them.
-          </p>
-        </div>
-      {/snippet}
-    </ProjectCard>
-
-    <ProjectCard
       title="Personal Website"
       sourceLink="https://github.com/mckeenicholas/personal-site"
     >
@@ -336,29 +242,6 @@
             Used as an experimentation ground for new web development frameworks
             and libraries.
           </p>
-        </div>
-      {/snippet}
-    </ProjectCard>
-
-    <ProjectCard
-      title="Text Compressor"
-      sourceLink="https://github.com/mckeenicholas/huffman-encoder"
-    >
-      {#snippet desc()}
-        <div>
-          <div class="flex flex-wrap gap-x-2">
-            <Badge logo="c++" label="C++" color="white" fill="00599C" />
-            <Badge logo="cmake" label="CMake" color="white" fill="083D69" />
-          </div>
-        </div>
-      {/snippet}
-      {#snippet content()}
-        <div class="space-y-2">
-          <p>
-            A Command-line utility for compressing text files into a binarized
-            format.
-          </p>
-          <p>Reduces file size by 20-40% on average.</p>
         </div>
       {/snippet}
     </ProjectCard>

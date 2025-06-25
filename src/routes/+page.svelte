@@ -25,14 +25,18 @@
           <p class="mb-3">Hey, I'm Nicholas!</p>
           <div class="grid grid-cols-1 space-y-2">
             <p>
-              I am currently a 3rd year computer science student at the
-              University of Toronto with a focus in artificial intelligence and
-              computer systems.
+              I am a recent Computer Science graduate from the <LinkText
+                href="https://www.utoronto.ca/">University of Toronto</LinkText
+              >. I graduated in June 2025 with a focus in artifical intelligence
+              and machine learning. During my time there, I also participated in
+              a research group developing <LinkText
+                href="https://github.com/KidneyOS/KidneyOS">KidneyOS</LinkText
+              >, a Rust-based, pedagogical, toy operating system.
             </p>
             <p>
-              I grew up in the Greater Boston area, (but often times spend my
-              summers in Lunenburg, Nova Scotia) before moving to Toronto for
-              University in 2021.
+              I originally grew up in the Greater Boston area, (but often times
+              spend my summers in Lunenburg, Nova Scotia) before moving to
+              Toronto in 2021.
             </p>
             <p>
               Throughout high school, I participated in competitive swimming,
@@ -49,8 +53,8 @@
               , and 3D modelling/printing.
             </p>
             <p>
-              My programming languages of choice are Python and TypeScript, but
-              I am familiar with <LinkText
+              My programming languages of choice are Python, TypeScript and
+              Rust, but I'm familiar with <LinkText
                 href="https://teach.cs.utoronto.ca/~mckeenic/resume.pdf"
                 >several others</LinkText
               >.
@@ -63,18 +67,19 @@
         <Card.Content>
           <div class="grid grid-cols-1 space-y-2">
             <p>
-              I am currently a senior member on the Disciplinary Committee for
-              the <LinkText href="https://www.worldcubeassociation.org/">
+              I am currently a senior member on the Appeals Committee for the <LinkText
+                href="https://www.worldcubeassociation.org/"
+              >
                 World Cube Association
               </LinkText>
               , the governing body for Rubik's cube and other twisty puzzle competitions.
-              As part of this committee, we investigate regulation and code of conduct
-              violations, and issue sanctions where necessary.
+              As part of this committee, we serve as the orginzations highest board
+              of appeal.
             </p>
             <p>
-              I have helped organize and oversee over 25 WCA recognized
+              I have helped organize and oversee over 40 WCA recognized
               competitions within Eastern Canada and the Northeast U.S.,
-              totaling over 2500 competitors.
+              totaling over 3200 competitors.
             </p>
             <p>
               I served as the STEM Education Director at Griswold Scout
